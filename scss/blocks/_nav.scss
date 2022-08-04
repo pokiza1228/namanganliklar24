@@ -1,0 +1,17 @@
+.nav {
+    margin-top: 30px;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include list-style;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D1D1D1;
+}
+.nav__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7F7F7F;
+}
