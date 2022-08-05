@@ -4,7 +4,7 @@
 }
 .notifications__description {
     background-image: url('../img/notifications.jpg');
-    width: 1050px;
+    max-width: 1050px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@
     border-radius: 10px;
 }
 .notifications__title {
-    width: 404px;
+    max-width: 404px;
     font-weight: 600;
     font-size: 20px;
     line-height: 26px;
@@ -29,3 +29,15 @@
     padding: 13px 30px;
     color: #FFFFFF;
 }
+
+ @media only screen and (max-width: $mobile) {
+    .notifications__description {
+        padding: 25px;
+        flex-direction: column;
+    }
+    .notifications__title {
+        margin-bottom: 15px;
+       font-size: 16px;
+       text-align: center;
+    }
+ }
