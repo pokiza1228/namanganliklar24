@@ -439,7 +439,7 @@ a {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #fcb72b;
+  background-color: #7296EC;
 }
 
 .burger__inner {
@@ -470,7 +470,7 @@ a {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1180px) {
   .burger {
     display: block;
   }
@@ -582,6 +582,35 @@ a {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 1180px) {
+  .header__price {
+    display: none;
+  }
+  .header__btns {
+    display: none;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header__search {
+    display: none;
+  }
+  .header__logo {
+    font-size: 16px;
+  }
+}
+
 .nav {
   margin-top: 30px;
 }
@@ -590,6 +619,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -603,11 +634,27 @@ a {
   border-bottom: 1px solid #D1D1D1;
 }
 
+.nav__item {
+  margin-right: 10px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
 .nav__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: #7F7F7F;
+}
+
+@media only screen and (max-width: 1180px) {
+  .nav__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .intro {
