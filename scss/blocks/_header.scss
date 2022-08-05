@@ -14,12 +14,18 @@
     border-radius: 7px;
     margin-right: 35px;
 }
+.header__logo {
+    color: #7296EE;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
 .header__price {
     display: flex;
     align-items: center;
-    width: 158px;
+    width: 155px;
     justify-content: space-between;
-    margin-right: 247px;
+    margin-right: 200px;
     font-weight: 700;
     color: #555555;
     font-size: 16px;
@@ -52,7 +58,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
 }
 .header__btn {
     background-color: transparent;
@@ -73,4 +78,5 @@
     color: #FFFFFF;
     background: #7296EC;
     border-radius: 10px;
+    margin-left: auto;
 }
