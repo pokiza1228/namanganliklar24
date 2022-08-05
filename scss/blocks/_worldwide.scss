@@ -123,12 +123,18 @@
         margin-left: 0;
         width: 100%;
     }
+    .worldwide__img {
+        margin: 0 auto;
+    }
  }
  @media only screen and (max-width: $mobile) {
    .worldwide__link{
     flex-direction: column;
     text-align: center;
    }
+   .worldwide__img {
+   width: 100%;
+}
     .worldwide__text {
         display: block;
     }
